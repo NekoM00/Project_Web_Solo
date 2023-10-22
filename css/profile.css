@@ -30,7 +30,7 @@ body{
     position: relative;
     background-color: #4747474f;
     padding: 12px 20px;
-    margin: 0vh 0vw 10vh 0vw;
+    margin: 0vh 0vw 5vh 0vw;
     padding: 3vh 7vw 3vh 7vw;
 }
 .logo a{
@@ -55,6 +55,7 @@ body{
 .menu .active a {
     border-bottom: 4px solid rgb(5, 202, 252);
 }
+
 .menu li a::after {
     content: "";
     position: absolute;
@@ -151,44 +152,46 @@ body{
 .bigbox .content{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 3vw;
+    
     /* border: solid 3px red; */
 }
-.content .box{
-    /* border: solid 1px white; */
-    margin: 0vh 0vw 5vh 0vw;
-    
+.content .img{
+    /* border: solid white; */
+    padding: 6vw;
 }
-.content .box .img{
-    
-    border-radius: 10px;
-    
-}
-.content .box .img img{
-    box-shadow: 1px 1px 4px 5px rgb(10, 147, 238);
-    border-radius: 10px;
-    transition: .3s;
-}
-.content .box .img img:hover{
-    scale: 1.04;
-    box-shadow: 2px 2px 9px 11px rgba(4, 113, 202, 0.607);}
-
-.content .box .text{
-    text-align: center;
-    padding: 0vh 0vw 1vh 0vw;
-    margin: 0vh 0vw 2vh 0vw;
-    border-left: red solid 5px;
-    width: 19%;
-    color: whitesmoke;
-    font-family: next;
-    font-size: 2rem;
-    
-    
-}
-
-.content .box img{
+.content .img img{
     width: 100%;
+    border-radius: 10px;
 }
+.content .text{
+    /* border: solid white; */
+    padding: 6vw;
+    letter-spacing: .06vw;
+    line-height: 6vh;
+}
+.content .text h2{
+    padding: 0vh 0vw 0vh 1vw;
+    color: whitesmoke;
+    font-family: kanit;
+    border-left: solid red 5px;
+    margin-bottom: 5vh;
+    font-size: 2rem;
+}
+.content .text span{
+    color: aqua;
+    font-family: kanit;
+    font-size: 1.5rem;
+}
+.content .text p{
+    color: whitesmoke;
+    font-family: kanit;
+    font-size: 1.5rem;
+}
+
+
+
+
+
 
 
 
@@ -217,14 +220,10 @@ body{
     .menu li a {padding: 10px;}
     .open-menu , .close-menu {display: block;}
     #check:checked ~ .menu {right: 0;}
+    
     .bigbox .content{
-        display: grid;
         grid-template-columns: repeat(1,1fr);
-        gap: 3vw;
-        /* border: solid 3px red; */
     }
-    
-    
 }
 @media(max-width:655px){
     .footer .boxfooter{
