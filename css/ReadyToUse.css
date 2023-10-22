@@ -6,6 +6,10 @@
     font-family: next;
     src: url(../font/TheNextFont.ttf);
 }
+@font-face {
+    font-family: kanit;
+    src: url(../font/Kanit-Regular.ttf);
+}
 * {
     padding: 0;
     margin: 0;
@@ -48,10 +52,10 @@ body{
     font-size: 1.5rem;
     font-family: next;
 }
-
 .menu .active a {
     border-bottom: 4px solid rgb(5, 202, 252);
 }
+
 .menu li a::after {
     content: "";
     position: absolute;
@@ -104,7 +108,7 @@ body{
 }
 .footer .fbox1 p{
     color: whitesmoke;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 .footer .fbox1{
     padding: 1vh 0vw 1vh 0vw;
@@ -127,7 +131,7 @@ body{
 .footer .fbox2 li a{
     text-decoration: none;
     color: whitesmoke;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 .fbox3{
     border-left: solid 3px rgb(5, 170, 252);
@@ -138,9 +142,28 @@ body{
 }
 .fbox3 a{
     color: whitesmoke;
-    font-size: 3.6rem;
+    font-size: 3rem;
     margin: 1vh 0vw 1vh 0vw;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 869px){
     .menu {
         flex-direction: column;
