@@ -145,6 +145,40 @@ body{
     font-size: 3rem;
     margin: 1vh 0vw 1vh 0vw;
 }
+.fbox3 a .bi-facebook:hover{
+    color: rgb(9, 68, 231);
+    scale: 1.05;
+}
+.fbox3 a .bi-youtube:hover{
+    color: red;
+    scale: 1.05;
+}
+.fbox3 a .bi-discord:hover{
+    color: #7289da;
+    scale: 1.05;
+}
+.footer .fbox2 ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: next;
+}
+.footer .fbox2 ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(5, 202, 252);
+    transition: 0.15s ease-in-out;
+}
+.footer .fbox2 ul li a:hover:after {width: 100%;}
 .bigbox{
     padding: 0vh 7vw 0vh 7vw;
     margin: 0vh 0vw 10vh 0vw;
@@ -161,14 +195,16 @@ body{
 }
 .content .img img{
     width: 100%;
-    border-radius: 10px;
-}
+    border-radius: 5px;
+    box-shadow: rgba(146, 216, 244, 0.1) 0px 4px 16px, rgba(146, 216, 244, 0.1) 0px 8px 24px, rgba(146, 216, 244, 0.1) 0px 16px 56px;}
+
 .content .text{
     /* border: solid white; */
+    border-radius: 5px;
     padding: 6vw;
     letter-spacing: .06vw;
     line-height: 6vh;
-}
+    box-shadow: rgba(146, 216, 244, 0.1) 0px 4px 16px, rgba(146, 216, 244, 0.1) 0px 8px 24px, rgba(146, 216, 244, 0.1) 0px 16px 56px;}
 .content .text h2{
     padding: 0vh 0vw 0vh 1vw;
     color: whitesmoke;
@@ -178,7 +214,7 @@ body{
     font-size: 2rem;
 }
 .content .text span{
-    color: aqua;
+    color: rgb(48, 184, 234);
     font-family: kanit;
     font-size: 1.5rem;
 }

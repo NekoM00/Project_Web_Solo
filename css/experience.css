@@ -146,6 +146,40 @@ body{
     font-size: 3rem;
     margin: 1vh 0vw 1vh 0vw;
 }
+.footer .fbox2 ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: next;
+}
+.footer .fbox2 ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(5, 202, 252);
+    transition: 0.15s ease-in-out;
+}
+.footer .fbox2 ul li a:hover:after {width: 100%;}
+.fbox3 a .bi-facebook:hover{
+    color: rgb(9, 68, 231);
+    scale: 1.05;
+}
+.fbox3 a .bi-youtube:hover{
+    color: red;
+    scale: 1.05;
+}
+.fbox3 a .bi-discord:hover{
+    color: #7289da;
+    scale: 1.05;
+}
 .bigbox{
     padding: 0vh 7vw 0vh 7vw;
     margin: 0vh 0vw 10vh 0vw;
@@ -173,8 +207,9 @@ body{
     font-family: kanit;
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 4vh;
-    color: rgb(5, 202, 252);
+    margin-bottom: 6vh;
+    border-left: red solid 5px;
+    text-indent: 1vw;
 }
 .content .box1 p{
     color: white;
@@ -186,7 +221,7 @@ body{
 }
 .content .box2{
     padding: 2vh 3vw 2vh 3vw;
-    border-left: solid rgb(5, 202, 252);
+    border-left: solid 3px rgb(5, 170, 252);
 }
 .content .box2 h2{
     color: whitesmoke;
@@ -194,7 +229,8 @@ body{
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 4vh;
-    color: rgb(5, 202, 252);
+    text-indent: 1vw;
+    border-left: red solid 5px;
 }
 .content .box2 p{
     color: whitesmoke;
