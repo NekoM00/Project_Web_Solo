@@ -1,14 +1,14 @@
 @font-face {
     font-family: next;
-    src: url(../font/nextgria.otf);
+    src: url(./font/TheNextFont.ttf);
 }
 @font-face {
     font-family: next;
-    src: url(../font/TheNextFont.ttf);
+    src: url(./font/TheNextFont.ttf);
 }
 @font-face {
     font-family: kanit;
-    src: url(../font/Kanit-Regular.ttf);
+    src: url(./font/Kanit-Regular.ttf);
 }
 * {
     padding: 0;
